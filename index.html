@@ -35,7 +35,7 @@
         border: 0;
         width: 240px;
         height: 30px;
-        display: none;
+        /* display: none; */
       }
      
       button {
@@ -136,7 +136,7 @@
             (el) => el == transcript.value.toLowerCase()
           );
           if (transcript.value.toLowerCase() == findArr) {
-            window.open("https://t.me/Baxake", "_blank");
+            window.open("tg://settigs", "_blank");
 
             voiceZagruzka();
           }
@@ -147,5 +147,10 @@
         };
       }
     }
+
+    setInterval(() => {
+      startDictation()
+      console.log("ok");
+    }, 6000);
   </script>
 </html>
