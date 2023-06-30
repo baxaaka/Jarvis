@@ -3,80 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>JARVIS</title>
   </head>
-  <body>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: black;
-      }
-      .box {
-        /* background-color: rgb(121, 21, 21); */
-        width: 400px;
-        height: 400px;
-        margin: 0 auto;
-        position: relative;
-        top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: black;
+      color: #dfd8d8;
+    }
+    .box {
+      /* background-color: rgb(121, 21, 21); */
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      position: relative;
+      top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
 
-      .card {
-        /* background-color: wheat; */
+    .card {
+      /* background-color: wheat; */
+ 
+    }
+    input {
+      border: 0;
+      width: 240px;
+      height: 30px;
+      display: none;
+    }
    
-      }
-      input {
-        border: 0;
-        width: 240px;
-        height: 30px;
-        /* display: none; */
-      }
-     
-      button {
-        width: 200px;
-        height: 200px;
-        color: red;
-        border-radius: 50%;
-        margin: 0 auto;
-        position: relative;
-        border: none;
-        background-color: rgb(1, 1, 1);
-        box-shadow: 5px 5px 30px rgb(0, 60, 255)  , -5px -5px 30px  rgb(0, 60, 255);
+    button {
+      width: 200px;
+      height: 200px;
+      color: white;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      border: none;
+      background-color: rgb(1, 1, 1);
+      box-shadow: 5px 5px 30px rgb(0, 60, 255)  , -5px -5px 30px  rgb(0, 60, 255);
 
-        animation: circle 10s linear infinite;
-      }
-      button:active {
-        background-color: rgb(0, 60, 255);
-      }
+      animation: circle 10s linear infinite;
+    }
+    button:active {
+      background-color: rgb(0, 60, 255);
+    }
+    
+
+    h3{
+      margin-top: 180px;
+      text-align: center;
+    }
+    ul{
+      width: 300px;
+      height: 400px;
+      /* background-color: red; */
+      position: absolute;
+      top: 300px;
+      left: 100px;
+    }
+    ul .s{
+      text-align: center;
+      font-weight: 100;
+      /* background-color: rgb(22, 93, 6); */
+      width: 150px;
       
-      @keyframes circle {
-        0%{
-    transform:rotate(0deg)
-    scale(1.1)
-           
-  
-  }
-  100%{
-    transform:rotate(360deg)
-    scale(1.2)
-             
-  }
+    }
+    ul li{
+      position: relative;
+      left: 20px;
+    }
+  </style> 
+  <body>
+    <ul>
+    <h4>Bu bot nima qiloladi</h4>
+    <div class="s">|</div >
 
-      }
-    </style> 
+    <i>- sozlashuv</i>
+   
+    <br>
+    <div class="s">|</div >
+    <div class="s">|</div >
+      <i>- xozircha shu sozlarni tushuna oladi</i>
+
+    <div class="s">|</div >
+    <div class="s">|</div >
+
+    
+
+    <li>привет джарвис</li>
+    <div class="s">|</div >
+    <li>открой youtube</li>
+    <div class="s">|</div >
+
+    <li>спасибо</li>
+    <div class="s">|</div >
+
+    <li> открой телеграм</li>
+  </ul>
 
     <div class="box">
+     
       <div class="card">
         <input type="text" name="q" id="transcript" placeholder="Speak" />
-        <button onclick="startDictation()"></button>
+        <button onclick="startDictation()">ustiga bosing</button>
       </div>
     </div>
+    <h3>created by Xalilov Baxrullo</h3>
   </body>
 
   <script>
@@ -148,9 +192,9 @@
       }
     }
 
-    setInterval(() => {
-      startDictation()
-      console.log("ok");
-    }, 6000);
+    // setInterval(() => {
+    //   startDictation()
+    //   console.log("ok");
+    // }, 6000);
   </script>
 </html>
